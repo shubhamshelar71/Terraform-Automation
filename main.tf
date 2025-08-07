@@ -47,7 +47,7 @@ resource "aws_instance" "myFirstInstance" {
   key_name = var.key_name
   instance_type = var.instance_type
   vpc_security_group_ids = [aws_security_group.jenkins-sg-2022.id]
-  subnet_id = data.aws_subnet.example.id
+  subnet_id = "subnet-0ab402d69076a3f09"
   tags= {
     Name = var.tag_name
   }
